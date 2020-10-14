@@ -7,7 +7,7 @@ export class WelcomeScreen extends Component {
   render() {
     return (
       <ImageBackground
-        blurRadius={10}
+        blurRadius={7}
         source={require("../assets/login-bg.jpg")}
         style={styles.background}
       >

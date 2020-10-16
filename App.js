@@ -1,13 +1,11 @@
 import React from "react";
 import { StyleSheet, View, Image, Text, ImageBackground } from "react-native";
+import { Icon } from "./app/components/Icon";
+import { ListItem } from "./app/components/ListItem";
 
-import { Card } from "./app/components/Card";
-import { ListingDetailsScreen } from "./app/screens/ListingDetailsScreen";
-import { MessagesScreen } from "./app/screens/MessagesScreen";
-import { ViewImageScreen } from "./app/screens/ViewImageScreen";
-import { WelcomeScreen } from "./app/screens/WelcomeScreen";
+import { Screen } from "./app/components/Screen";
+import AccountScreen from "./app/screens/AccountScreen";
 
-const view = (0 && <ViewImageScreen />) || <WelcomeScreen />;
 export default () => {
-  return <MessagesScreen />;
+  return <AccountScreen />;
 };

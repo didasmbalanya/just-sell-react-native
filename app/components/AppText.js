@@ -5,7 +5,7 @@ import defaultStyles from "../config/styles";
 
 export const AppText = ({ children, style }) => {
   return (
-    <View>
+    <View style={style}>
       <Text style={[defaultStyles.text, style]}>{children}</Text>
     </View>
   );

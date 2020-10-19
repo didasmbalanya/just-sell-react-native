@@ -1,12 +1,14 @@
-import React from "react";
-import { StyleSheet, View, Image, Text, ImageBackground } from "react-native";
-import { Icon } from "./app/components/Icon";
-import { ListItem } from "./app/components/ListItem";
+import React, { useState } from "react";
+import { TextInput } from "react-native";
+import { AppTextInput } from "./app/components/AppTextInput";
 
 import { Screen } from "./app/components/Screen";
-import AccountScreen from "./app/screens/AccountScreen";
-import { ListingsScreen } from "./app/screens/ListingsScreen";
 
 export default () => {
-  return <ListingsScreen />;
+  const [value, setValue] = useState("");
+  return (
+    <Screen>
+      <AppTextInput placeholder="Username" icon="email" />
+    </Screen>
+  );
 };

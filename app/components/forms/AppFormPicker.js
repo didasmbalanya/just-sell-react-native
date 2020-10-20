@@ -20,7 +20,7 @@ export const AppFormPicker = ({
       <AppPicker
         items={items}
         onSelectItem={(item) => setFieldValue(name, item)}
-        placeholder={placeholder}
+        placeholder={(values[name] && values[name].label) || placeholder}
         PickerItemComponent={PickerItemComponent}
         width={width}
         selectedItem={[values[name]]}

@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import { TouchableWithoutFeedback } from "react-native-gesture-handler";
 import { AppText } from "./AppText";
 import { Icon } from "./Icon";
 
@@ -9,8 +10,10 @@ export const CategoryPickerItem = ({
 }) => {
   return (
     <View style={styles.container}>
-      <Icon backgroundColor={backgroundColor} name={icon} size={80} />
-      <AppText style={styles.label}>{label}</AppText>
+      <TouchableWithoutFeedback onPress={onPress}>
+        <Icon backgroundColor={backgroundColor} name={icon} size={80} />
+        <AppText style={styles.label}>{label}</AppText>
+      </TouchableWithoutFeedback>
     </View>
   );
 };

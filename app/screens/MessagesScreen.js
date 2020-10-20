@@ -9,13 +9,15 @@ const messagesData = [
   {
     id: 1,
     title: "Message 1",
-    description: "Descript 1",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iure deserunt eaque ipsa tempore repellat eius saepe maiores, beatae enim. Laudantium facilis harum est nobis eligendi temporibus eum laboriosam aliquid, minus cumque in nam fuga voluptatem quo necessitatibus repudiandae ipsa. Exercitationem facilis aspernatur cum voluptatem eius totam excepturi, molestias in.",
     image: require("../assets/profilepic.jpg"),
   },
   {
     id: 2,
     title: "Message 2",
-    description: "Descript 2",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa animi architecto nobis odio impedit atque repellat optio amet minus. Facere aspernatur eius rem necessitatibus quam illo numquam, sunt labore veniam.",
     image: require("../assets/profilepic.jpg"),
   },
   {

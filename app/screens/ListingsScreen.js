@@ -19,14 +19,19 @@ const listings = [
     image: require("../assets/bulldog.jpg"),
   },
 ];
-export const ListingsScreen = () => {
+export const ListingsScreen = ({ navigation }) => {
   return (
     <Screen style={styles.screen}>
       <FlatList
         data={listings}
         keyExtractor={(listing) => listing.id.toString()}
-        renderItem={({ item: { image, price, title } }) => (
-          <Card title={title} subTitle={`$${price}`} image={image} />
+        renderItem={({ item }) => (
+          <Card
+            title={item.title}
+            subTitle={`$${item.price}`}
+            image={item.image}
+            onPress={() => navigation.navigate("ListingsDetails", item)}
+          />
         )}
       />
     </Screen>
